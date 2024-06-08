@@ -7,22 +7,22 @@ import { DiJavascript1, DiReact, DiAngularSimple, DiHtml5, DiCss3, DiSass, DiBoo
 
 function Hero() {
   return (
-    <div className='max-w-[1200px] mx-auto grid md:grid-cols-8 gap-6 p-10 md:p-0' id='home'>
-      <div className='grid grid-cols-2 md:col-span-5 p-8 glass'>
-          <img className='w-[800px]' src={profilepic} alt="profile pic" />
-          <div className='my-auto ml-8 flex-col text-gray-200'>
-              <p className='text-2xl md:text-4xl font-bold'>Hi! i am Snehal Bargaje<br/>
+    <div className='max-w-[1200px] mx-auto grid md:grid-cols-8 gap-6 p-4' id='home'>
+      <div className='grid md:grid-cols-2 md:col-span-5 p-4 glass'>
+          <img className='w-[600px] mb-4 rounded-3xl' src={profilepic} alt="profile pic" />
+          <div className='my-auto ml-0 md:ml-4 flex-col text-gray-200'>
+              <p className='text-xl lg:text-4xl font-bold'>Hi! i am <br/> Snehal Bargaje<br/>
                 <TypeAnimation sequence={["Frontend Dev", 1000, "Webdesigner", 1000, "Consultant", 1000]} wrapper='span' speed={50} repeat={Infinity}/>
               </p>
-              <p className='text-xl md:text-3xl font-semibold text-gray-400'>with a 4 months experiance</p>
-              <button className='mt-4 px-4 py-2 text-lg font-bold text-white bg-primary-color rounded-xl'>Download CV</button>
+              <p className='text-xl lg:text-3xl font-semibold text-gray-400'>with a 4 months experiance</p>
+              <button className='mt-4 px-4 py-2 text-sm md:text-lg font-bold text-white bg-primary-color rounded-xl'>Download CV</button>
           </div>
       </div>
 
       <div className='grid md:col-span-3 gap-6'>
-        <div className='text-5xl p-12 glass'>
+        <div className='text-5xl p-4 glass'>
           <p className='text-gray-200 text-xl font-bold mb-4 text-center'>My Tech Stack</p>
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-4 md:gap-4'>
               <DiHtml5 className='text-orange-600'/>
               <DiCss3 className='text-blue-600'/>
               <DiSass className='text-pink-600'/>
