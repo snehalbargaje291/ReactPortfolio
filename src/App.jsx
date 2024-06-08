@@ -1,8 +1,12 @@
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router } from 'react-router-dom'
 import Portfolio from './components/Portfolio'
+import About from './components/About'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
+import { BrowserRouter as Router } from 'react-router-dom'
+
 
 function App() {
 
@@ -10,7 +14,10 @@ function App() {
     <Router>
       <Navbar />
       <Hero />
-      <Portfolio/>
+      <Portfolio />
+      <Contact />
+      <About />
+      <Footer />
     </Router>
   )
 }

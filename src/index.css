@@ -20,7 +20,6 @@ span,
   @apply bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109];
 }
 
-
 h2 {
   @apply text-xl md:text-4xl;
 }

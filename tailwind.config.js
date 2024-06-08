@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '2.5xl': '1.2rem', // Custom border-radius between 2xl and 3xl
+      },
+    },
   },
   plugins: [],
 }

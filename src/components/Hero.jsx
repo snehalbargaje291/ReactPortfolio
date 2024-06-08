@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 import { TypeAnimation } from 'react-type-animation'
 import { DiJavascript1, DiReact, DiAngularSimple, DiHtml5, DiCss3, DiSass, DiBootstrap, DiMysql} from 'react-icons/di'
 
-const Hero = () => {
+function Hero() {
   return (
     <div className='max-w-[1200px] mx-auto grid md:grid-cols-8 gap-6 p-10 md:p-0' id='home'>
       <div className='grid grid-cols-2 md:col-span-5 p-8 glass'>
