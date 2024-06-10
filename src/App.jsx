@@ -14,9 +14,9 @@ function App() {
     <Router>
       <Navbar />
       <Hero />
-      <Portfolio />
-      <Contact />
-      <About />
+      <Portfolio id="portfolio"/>
+      <Contact id="contact"/>
+      <About id="about"/>
       <Footer />
     </Router>
   )
