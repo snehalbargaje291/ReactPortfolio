@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from 'react-router-dom'
 import profilepic from "../assets/photomy.png";
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiOutlineMail} from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 import {
   DiJavascript1,
@@ -47,8 +47,8 @@ function Hero() {
           <p className="text-xl lg:text-3xl font-semibold text-gray-400">
             with a 4 months experiance
           </p>
-          <button className="mt-4 px-2 py-2 text-sm md:text-lg font-bold text-white bg-primary-color rounded-xl">
-            Download CV
+          <button className="mt-6 px-2 py-2 text-sm md:text-lg font-bold text-white bg-primary-color rounded-xl">
+            <a href="../assets/Snehal_Bargaje_9309976227 (2).pdf" download="Snehal's Resume.pdf" title="Download Resume">Download CV</a>
           </button>
         </div>
       </div>
@@ -86,9 +86,15 @@ function Hero() {
           </div>
         </div>
         <div className="text-6xl gap-4 p-2 flex justify-center items-center glass text-gray-600">
-          <AiFillGithub />
-          <AiFillLinkedin />
-          <AiFillInstagram />
+          <a href="https://github.com/snehalbargaje291" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <AiFillGithub className="transition duration-300" />
+          </a>
+          <a href="www.linkedin.com/in/snehal-bargaje-o2910" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <AiFillLinkedin className="transition duration-300" />
+          </a>
+          <a href="mailto:snehal.bargaje291@gmail.com" title="Email">
+            <AiOutlineMail className="transition duration-300" />
+          </a>
         </div>
       </div>
     </div>

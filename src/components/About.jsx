@@ -1,9 +1,9 @@
 import React from 'react'
-import project1 from '../assets/dekstop (1).png'
-import project2 from '../assets/MeraSathoDEks.png'
+import project1 from '../assets/StartupDekstop.png'
+import project2 from '../assets/PlayWithTxtDeks.png'
 import {
   DiJavascript1,
-  DiReact,
+  DiAngularSimple,
   DiHtml5,
   DiCss3,
   DiBootstrap
@@ -15,7 +15,7 @@ function About() {
       <div className='p-6'>
         <h2 className='text-gray-200 text-3xl font-bold mb-4'>Skills</h2>
         <p className='text-gray-300 mb-4'>
-          As a passionate web front-end developer with 6 months of
+          As a passionate web front-end developer with 4 months of
           experience, I have a proven track record of creating visually
           stunning and responsive websites.
         </p>
@@ -24,7 +24,7 @@ function About() {
           <DiCss3 className="text-blue-600" />
           <DiBootstrap className="text-purple-600" />
           <DiJavascript1 className="text-yellow-600" />
-          <DiReact className="text-blue-500" />
+          <DiAngularSimple className="text-red-500" />
         </div>
       </div>
       <div className='relative group max-w-[600px]'>
