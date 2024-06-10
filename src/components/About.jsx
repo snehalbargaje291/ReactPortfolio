@@ -1,6 +1,6 @@
 import React from 'react'
-import project1 from '../assets/StartupDekstop.png'
-import project2 from '../assets/PlayWithTxtDeks.png'
+import project1 from "../assets/Projects/StartupDekstop.png";
+import project2 from "../assets/Projects/PlayWithTxtDeks.png";
 import {
   DiJavascript1,
   DiAngularSimple,
@@ -11,15 +11,15 @@ import {
 
 function About() {
   return (
-    <div className='max-w-[1000px] mt-10 mx-auto p-6 grid md:grid-cols-2 gap-8 place-items-center' id="about">
-      <div className='p-6'>
+    <div className='max-w-[1000px] md:mt-10 mx-auto p-6 grid md:grid-cols-2 gap-8 place-items-center' id="about">
+      <div className='md:p-6'>
         <h2 className='text-gray-200 text-3xl font-bold mb-4'>Skills</h2>
         <p className='text-gray-300 mb-4'>
           As a passionate web front-end developer with 4 months of
           experience, I have a proven track record of creating visually
           stunning and responsive websites.
         </p>
-        <div className='flex flex-wrap gap-4 text-4xl justify-center'>
+        <div className='flex flex-wrap gap-2 md:gap-4 text-4xl justify-center'>
           <DiHtml5 className="text-orange-600" />
           <DiCss3 className="text-blue-600" />
           <DiBootstrap className="text-purple-600" />
@@ -41,7 +41,7 @@ function About() {
           <img src={project2} alt="project 2" className='rounded-lg w-full h-auto' />
         </div>
       </div>
-      <div className='p-6 order-1 md:order-2'>
+      <div className='md:p-6 order-1 md:order-2'>
         <h2 className='text-gray-200 text-3xl font-bold mb-4'>Frontend Experience</h2>
         <p className='text-gray-300 mb-4'>
           Experienced in creating modern, responsive web applications using
