@@ -1,37 +1,48 @@
 import React, { useState } from "react";
+import project from "../assets/Projects/interviewIQ.png";
 import project1 from "../assets/Projects/MeraSathoDEks.png";
 import project2 from "../assets/Projects/StartupDekstop.png";
 import project3 from "../assets/Projects/PlayWithTxtDeks.png";
 import project4 from "../assets/Projects/portfolio-snehal-bargaje.vercel.app_.png";
 import project5 from "../assets/Projects/dekstop (1).png";
 import project6 from "../assets/Projects/artauction.png";
-import project7 from "../assets/Projects/smileofrmiles.png"
-import project8 from "../assets/Projects/DekstopForm-CRUD.png"
+import project7 from "../assets/Projects/smileofrmiles.png";
+import project8 from "../assets/Projects/DekstopForm-CRUD.png";
 import { AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const projects = [
   {
-    img: project1,
-    title: "P2PCarpooling",
-    description: "This is a description for project #1. Make sure it fits within the container.",
+    img: project,
+    title: "InterviewIQ",
+    description: "Interview preparation platform providing detailed feedback for each interview. Built with Gemini API in Next.js.",
     links: {
-      site: false,
-      github: "https://github.com/snehalbargaje291/Peer2Peer",
+      site: "https://ai-mock-interview-ten.vercel.app/",
+      github: "https://github.com/snehalbargaje291/ai-mock-interview",
     },
   },
   {
     img: project2,
     title: "StartupIdea",
-    description: "This is a description for project #2. Make sure it fits within the container.",
+    description: "Internship project where I learned Angular. This project represents the startup idea of the company I interned with, and it's an e-commerce app.",
     links: {
       site: "https://startup-rbbi.vercel.app/",
       github: "https://github.com/snehalbargaje291/startup",
     },
   },
   {
+    img: project1,
+    title: "P2PCarpooling",
+    description: "Carpooling project using JSP and Bootstrap to facilitate shared rides among users.",
+    links: {
+      site: false,
+      github: "https://github.com/snehalbargaje291/Peer2Peer",
+    },
+  },
+  {
     img: project3,
     title: "PlayWithText",
-    description: "This is a description for project #3. Make sure it fits within the container.",
+    description: "Text editing app built in React, developed while learning React.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/PlayWithText",
@@ -40,7 +51,7 @@ const projects = [
   {
     img: project4,
     title: "Portfolio",
-    description: "This is a description for project #4. Make sure it fits within the container.",
+    description: "My old portfolio website built with Angular, showcasing projects, skills, and experiences.",
     links: {
       site: "https://portfolio-snehal-bargaje.vercel.app/",
       github: "https://github.com/snehalbargaje291/portfolio",
@@ -49,7 +60,7 @@ const projects = [
   {
     img: project5,
     title: "NewsApp",
-    description: "This is a description for project #5. Make sure it fits within the container.",
+    description: "React app created while learning how to call APIs, providing the latest news articles from various sources.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/NewsApiApp",
@@ -58,7 +69,7 @@ const projects = [
   {
     img: project6,
     title: "ArtAuction",
-    description: "This is a description for project #5. Make sure it fits within the container.",
+    description: "College project built in Django and Python, providing an online platform for art auctions.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/artoction",
@@ -67,7 +78,7 @@ const projects = [
   {
     img: project7,
     title: "SmileForMiles",
-    description: "This is a description for project #5. Make sure it fits within the container.",
+    description: "Static website and my first frontend-only project, providing a tour management system for seamless travel experiences.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/Tour-Management-System",
@@ -76,33 +87,30 @@ const projects = [
   {
     img: project8,
     title: "Asp.net-CRUD",
-    description: "This is a description for project #5. Make sure it fits within the container.",
+    description: "Simple ASP.NET masterpage and desktop app performing CRUD operations, using SSMS database and C# backend.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/asp.net",
     },
-  }
+  },
 ];
+
+
 
 function Portfolio() {
   const [currentProject, setCurrentProject] = useState(0);
   return (
     <div
-      className="my-6 max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-8 gap-6 px-4"
+      data-aos="fade-up"
+      className="my-6 mb-6 max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-8 gap-6 px-4"
       id="portfolio"
     >
-      <div className="relative z-10 col-span-1 md:col-span-2 grid place-items-center">
-        <p className="text-gray-200 font-bold text-4xl md:skew-y-6 mb-4 md:mb-0">
-          Projects
-        </p>
-        {/* <img
-          src={arrow}
-          className="absolute w-[50px] top-10 right-0 md:right-12 hidden md:block"
-          alt="arrow"
-        /> */}
-        <ul className="flex flex-wrap justify-center md:flex-col gap-6 md:gap-1 md:space-y-4 md:text-2xl">
+      <div className="relative z-10 col-span-1 md:col-span-2 grid place-items-start">
+        <p className="text-gray-200 font-bold text-4xl mb-4 md:mb-0">Projects</p>
+        <ul className="flex flex-wrap top-0 md:flex-col gap-6 md:gap-1 md:space-y-6 text-sm md:text-md">
           {projects.map((project, index) => (
-            <li
+            <motion.li
+            whileTap={{ scale: 0.9}}
               key={index}
               onClick={() => setCurrentProject(index)}
               className={`cursor-pointer text-gray-300 mx-0 my-0 ${
@@ -110,17 +118,23 @@ function Portfolio() {
               }`}
             >
               {project.title}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
       <div className="z-10 glass w-full col-span-1 md:col-span-6">
         <div className="w-full h-100">
-          <img
-            className="w-auto h-auto object-cover rounded-2xl mb-4"
-            src={projects[currentProject].img}
-            alt={projects[currentProject].title}
-          />
+          <div className="w-full h-[300px] md:h-[400px]">
+            <motion.img
+            whileHover={{
+              scale: 0.9,
+              transition: { duration: 1 },
+            }}
+              className="w-full h-full object-cover rounded-2xl mb-4"
+              src={projects[currentProject].img}
+              alt={projects[currentProject].title}
+            />
+          </div>
         </div>
         <div className="p-2 overflow-auto">
           <p className="text-gray-200 text-sm md:text-lg mb-2 break-words">

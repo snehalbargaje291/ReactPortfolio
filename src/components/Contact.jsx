@@ -21,7 +21,7 @@ function Contact() {
   }, [isSubmitted]);
 
   return (
-    <div className='mt-24 px-6 max-w-[1000px] mx-auto md:grid md:grid-cols-2 place-items-center' id="contact">
+    <div data-aos="fade-up" className='mt-24 mb-6 px-6 max-w-[1000px] mx-auto md:grid md:grid-cols-2 place-items-center' id="contact">
       <div>
         <div className='text-gray-300 my-3 p-2'>
           <h3 className='text-4xl font-semibold mb-5'>Let's <span>connect</span></h3>

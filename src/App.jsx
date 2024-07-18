@@ -7,10 +7,15 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Chatbot from './components/Chatbot'
 import { BrowserRouter as Router } from 'react-router-dom'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 function App() {
-
+  useEffect(() => {
+    AOS.init({duration: 2000, easing: 'ease-in-sine'});
+}, [])
   return (
     <Router>
       <Navbar />
