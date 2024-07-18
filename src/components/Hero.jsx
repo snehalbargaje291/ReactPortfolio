@@ -48,7 +48,7 @@ function Hero() {
             with a 4 months experiance
           </p>
           <button className="mt-6 px-2 py-2 text-sm md:text-lg font-bold text-white bg-primary-color rounded-xl">
-            <a href="../assets/Snehal_Bargaje_9309976227 (2).pdf" download="Snehal's Resume.pdf" title="Download Resume">Download CV</a>
+            <a href="../src/assets/snehal_bargaje_9309976227.pdf" download="Snehal's Resume.pdf" title="Download Resume">Download CV</a>
           </button>
         </div>
       </div>
