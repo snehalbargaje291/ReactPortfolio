@@ -67,7 +67,7 @@ function Hero() {
             className="mt-6 px-2 py-2 text-lg md:text-4xl font-bold text-white bg-primary-color rounded-full"
           >
             <a
-              href="../src/assets/snehal_bargaje_9309976227.pdf"
+              href="../../public/SnehalsResume .pdf"
               download="Snehal's Resume.pdf"
               title="Download Resume"
             >
