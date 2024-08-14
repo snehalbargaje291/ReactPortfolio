@@ -24,7 +24,7 @@ const projects = [
   {
     img: project9,
     title: "AI-Portfolio",
-    description: "My old portfolio website built with Nextjs, OpenAI, Langchain and Vercel AI SDK showcasing projects, skills, and experiences.",
+    description: "Portfolio website built with Nextjs, OpenAI, Langchain and Vercel AI SDK showcasing projects, skills, and experiences.",
     links: {
       site: "https://snehal-ai-portfolio.vercel.app/",
       github: "https://github.com/snehalbargaje291/ai-portfolio",
@@ -33,7 +33,7 @@ const projects = [
   {
     img: project4,
     title: "Angular-Portfolio",
-    description: "My old portfolio website built with Angular, showcasing projects, skills, and experiences.",
+    description: "Portfolio website built with Angular, showcasing projects, skills, and experiences.",
     links: {
       site: "https://portfolio-snehal-bargaje.vercel.app/",
       github: "https://github.com/snehalbargaje291/portfolio",
