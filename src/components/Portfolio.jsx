@@ -4,9 +4,9 @@ import project1 from "../assets/Projects/MeraSathoDEks.png";
 import project2 from "../assets/Projects/StartupDekstop.png";
 import project3 from "../assets/Projects/PlayWithTxtDeks.png";
 import project4 from "../assets/Projects/portfolio-snehal-bargaje.vercel.app_.png";
+import project9 from "../assets/Projects/ai-portfolio.png";
+import project10 from "../assets/Projects/eComm-react.png";
 import project5 from "../assets/Projects/dekstop (1).png";
-import project6 from "../assets/Projects/artauction.png";
-import project7 from "../assets/Projects/smileofrmiles.png";
 import project8 from "../assets/Projects/DekstopForm-CRUD.png";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -19,6 +19,33 @@ const projects = [
     links: {
       site: "https://ai-mock-interview-ten.vercel.app/",
       github: "https://github.com/snehalbargaje291/ai-mock-interview",
+    },
+  },
+  {
+    img: project9,
+    title: "AI-Portfolio",
+    description: "My old portfolio website built with Nextjs, OpenAI, Langchain and Vercel AI SDK showcasing projects, skills, and experiences.",
+    links: {
+      site: "https://snehal-ai-portfolio.vercel.app/",
+      github: "https://github.com/snehalbargaje291/ai-portfolio",
+    },
+  },
+  {
+    img: project4,
+    title: "Angular-Portfolio",
+    description: "My old portfolio website built with Angular, showcasing projects, skills, and experiences.",
+    links: {
+      site: "https://portfolio-snehal-bargaje.vercel.app/",
+      github: "https://github.com/snehalbargaje291/portfolio",
+    },
+  },
+  {
+    img: project10,
+    title: "eCommerce-App",
+    description: "eCommerce app built in React, showcasing products and their details with API. Login, Add to Cart, and Checkout features are included.",
+    links: {
+      site: "https://ecommerce-chi-woad.vercel.app/",
+      github: "https://github.com/snehalbargaje291/ecomm",
     },
   },
   {
@@ -49,39 +76,12 @@ const projects = [
     },
   },
   {
-    img: project4,
-    title: "Portfolio",
-    description: "My old portfolio website built with Angular, showcasing projects, skills, and experiences.",
-    links: {
-      site: "https://portfolio-snehal-bargaje.vercel.app/",
-      github: "https://github.com/snehalbargaje291/portfolio",
-    },
-  },
-  {
     img: project5,
     title: "NewsApp",
     description: "React app created while learning how to call APIs, providing the latest news articles from various sources.",
     links: {
       site: false,
       github: "https://github.com/snehalbargaje291/NewsApiApp",
-    },
-  },
-  {
-    img: project6,
-    title: "ArtAuction",
-    description: "College project built in Django and Python, providing an online platform for art auctions.",
-    links: {
-      site: false,
-      github: "https://github.com/snehalbargaje291/artoction",
-    },
-  },
-  {
-    img: project7,
-    title: "SmileForMiles",
-    description: "Static website and my first frontend-only project, providing a tour management system for seamless travel experiences.",
-    links: {
-      site: false,
-      github: "https://github.com/snehalbargaje291/Tour-Management-System",
     },
   },
   {

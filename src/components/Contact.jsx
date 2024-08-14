@@ -38,7 +38,7 @@ function Contact() {
             <p className='text-xs md:text-base text-gray-200'>Projects</p>
           </div>
           <div className='bg-[#171717]/40 p-2 md:p-5 rounded-lg'>
-            <h3 className='text-xl md:text-3xl font-semibold text-gray-200'>4 <span>+</span></h3>
+            <h3 className='text-xl md:text-3xl font-semibold text-gray-200'>6 <span>+</span></h3>
             <p className='text-xs md:text-base text-gray-200'>Months Experiance</p>
           </div>
           {/* <div className='bg-[#171717]/40 p-2 md:p-5 rounded-lg'>
