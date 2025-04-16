@@ -240,7 +240,7 @@ function Hero() {
             <AiFillGithub className="transition duration-300" />
           </a>
           <a
-            href="https://github.com/snehalbargaje291/ReactPortfolio.git"
+            href="https://www.linkedin.com/in/snehal-bargaje-o291/"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
