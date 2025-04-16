@@ -67,7 +67,7 @@ function Hero() {
             className="mt-6 px-2 py-2 text-lg md:text-4xl font-bold text-white bg-primary-color rounded-full"
           >
             <a
-              href="/SnehalsResume .pdf"
+              href="/snehal_bargaje_9309976227.pdf"
               download="Snehal's Resume.pdf"
               title="Download Resume"
             >
@@ -240,7 +240,7 @@ function Hero() {
             <AiFillGithub className="transition duration-300" />
           </a>
           <a
-            href="www.linkedin.com/in/snehal-bargaje-o2910"
+            href="https://github.com/snehalbargaje291/ReactPortfolio.git"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"

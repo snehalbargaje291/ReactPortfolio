@@ -13,7 +13,7 @@ function Footer() {
           <a href="https://github.com/snehalbargaje291" target="_blank" rel="noopener noreferrer" title="GitHub">
             <FaGithubSquare className="text-2xl text-gray-300 hover:text-black transition duration-300" />
           </a>
-          <a href="www.linkedin.com/in/snehal-bargaje-o2910" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://github.com/snehalbargaje291/ReactPortfolio.git" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <FaLinkedin className="text-2xl text-gray-300 hover:text-blue-600 transition duration-300" />
           </a>
           <a href="mailto:snehal.bargaje291@gmail.com" title="Email">
